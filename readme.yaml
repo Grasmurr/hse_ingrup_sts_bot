@@ -1,0 +1,10 @@
+__init__.py: This file is required to make Python treat the directory as a package. You don't need to put any code in it.
+bot.py: This is where you define your main Bot class, which will handle all interactions with the Telegram API.
+  You can put all the methods related to managing the bot itself, like starting and stopping the bot,
+  setting up logging, and so on.
+handlers/: This folder is where you put all your message and callback query handlers. 
+  Each handler should be defined in its own file (e.g. message_handler.py and callback_query_handler.py). 
+  You can use __init__.py to import all the handlers so they're accessible from other files.
+models/: This folder is where you put all your data models (e.g. User and Chat). 
+  Each model should be defined in its own file (e.g. user.py and chat.py). 
+  Again, you can use __init__.py to import all the models so they're accessible from other files.
